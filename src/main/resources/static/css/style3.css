@@ -1,0 +1,101 @@
+/* 화면 가운데 정렬을 위한 스타일 */
+.container {
+    display: flex;
+    justify-content: center; /* 가로로 중앙 정렬 */
+    align-items: flex-start; /* 세로로 중앙 정렬을 flex-start로 변경하여 위로 올리기 */
+    height: 100vh; /* 화면의 전체 높이를 채움 */
+    width: 100vh;
+    margin-top: -30px; /* 컨테이너를 화면 위로 올림 */
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    max-width: 600px; /* 테이블 최대 너비 설정 */
+    margin: 0 auto; /* 테이블을 수평 중앙 정렬 */
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* "회원 수정" 텍스트와 form 사이의 간격을 20px로 설정 */
+}
+
+th, td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #103cbe;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    padding: 8px 12px;
+    background-color: #7D7F82;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+td a:hover {
+    background-color: #6b9ab8;
+}
+
+td a.delete {
+    background-color: #f44336;
+}
+
+td a.delete:hover {
+    background-color: #e53935;
+}
+
+/* 버튼 스타일 */
+.btn {
+    margin: 5px;
+    padding: 5px 11px;
+    color: white !important;
+    display: inline-block;
+    background-color: #7D7F82;
+    vertical-align: middle;
+    border-radius: 0 !important;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #6b9ab8;
+}
+
+/* 텍스트 줄이기 */
+.truncated-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* textarea 스타일 */
+textarea {
+    width: 100%;
+    min-height: 170px;
+    padding: 10px;
+}
+
+nav {
+    height: 60px; /* 네비게이션 바 높이 */
+}

@@ -1,0 +1,166 @@
+/* 전체 기본 스타일 */
+html {
+    overflow: scroll;
+}
+
+html, body, div, h1, h2, a, form, table, caption, thead, tbody, tr, th, td, submit {
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-size: 0.875em;
+    line-height: 1.5;
+    color: #666;
+    -webkit-text-size-adjust: none;
+    min-width: 320px;
+    font-family: 'NanumGothic', '나눔고딕', dotum, "Helvetica Neue", Helvetica, Verdana, Arial, Sans-serif;
+}
+
+h1, h2, h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #656565;
+
+}
+
+input {
+    vertical-align: middle;
+}
+
+input:focus {
+    outline: 0;
+}
+
+caption {
+    display: none;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 30px auto;
+}
+
+/* 본문 콘텐츠 영역 스타일 */
+.content {
+    padding-top: 80px; /* 네비게이션 바 높이에 맞춰 본문에 여백 추가 */
+}
+
+/* 테이블 스타일 */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    margin-top: 20px; /* h1 위에 20px의 여백 추가 */
+
+}
+th, td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #103cbe;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    padding: 8px 12px;
+    background-color: #7D7F82;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+td a:hover {
+    background-color: #6b9ab8;
+}
+
+td a.delete {
+    background-color: #f44336;
+}
+
+td a.delete:hover {
+    background-color: #e53935;
+}
+
+/* 버튼 스타일 */
+.btn {
+    margin: 5px;
+    padding: 5px 11px;
+    color: white !important;
+    display: inline-block;
+    background-color: #7D7F82;
+    vertical-align: middle;
+    border-radius: 0 !important;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #6b9ab8;
+}
+
+.file_list a {
+    display: inherit !important;
+}
+
+/* 텍스트 줄이기 */
+.truncated-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* textarea 스타일 */
+textarea {
+    width: 100%;
+    min-height: 170px;
+    padding: 10px;
+}
+
+nav {
+    height: 60px; /* 네비게이션 바 높이 */
+}
+
